@@ -6,7 +6,7 @@ module BreadcrumbHelper
     breadcrumbs.last[1] = nil
 
     if breadcrumbs
-      render GovukComponent::Breadcrumbs.new(
+      render GovukComponent::BreadcrumbsComponent.new(
         breadcrumbs: breadcrumbs,
         classes: "govuk-!-display-none-print",
       )

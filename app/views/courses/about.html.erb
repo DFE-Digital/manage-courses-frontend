@@ -63,8 +63,8 @@
       </ul>
 
       <%= govuk_details(
-        summary: "Several courses in the same subject?",
-        description: "If you offer more than one course in the same subject – eg two Primary courses – it’s important to say how they differ (eg differences in teaching placements or in the focus of the training). Otherwise, applicants may be unable to decide between them.",
+        summary_text: "Several courses in the same subject?",
+        text: "If you offer more than one course in the same subject – eg two Primary courses – it’s important to say how they differ (eg differences in teaching placements or in the focus of the training). Otherwise, applicants may be unable to decide between them.",
       ) %>
 
       <%= f.govuk_text_area(:about_course,
@@ -112,7 +112,7 @@
         <li>how placement schools are selected</li>
       </ul>
 
-      <%= govuk_details(summary: "See the guidance we show in this section") do %>
+      <%= govuk_details(summary_text: "See the guidance we show in this section") do %>
         <h3 class="govuk-heading-m">Where you will train</h3>
         <% if @provider.provider_type == 'university' %>
           <p class="govuk-body">You can’t pick which schools you want to be in, but your university will try to take your journey time into consideration.</p>
