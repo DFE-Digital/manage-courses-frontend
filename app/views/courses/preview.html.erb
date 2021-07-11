@@ -5,7 +5,7 @@
 <% end %>
 
 <%= govuk_notification_banner(title: t("notification_banner.info")) do |notification_banner| %>
-  <%= notification_banner.add_heading(text: "This is a preview of the ‘#{course.name_and_code}’ course.") %>
+  <%= notification_banner.heading(text: "This is a preview of the ‘#{course.name_and_code}’ course.") %>
 <% end %>
 
 <h1 class="govuk-heading-xl">
